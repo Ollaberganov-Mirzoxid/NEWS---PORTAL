@@ -1,3 +1,167 @@
+.show-body-main{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 120px;
+    padding-top: 30px;
+    padding-bottom: 0px;
+    gap: 25px;
+}
+
 .show-body-left{
-    
+    width: 70%;
+    background-color: #fff;
+}
+
+.show-body-left-header{
+    display: flex;
+    align-items: center;
+    padding: 50px;
+    padding-bottom: 30px;
+    gap: 20px;
+}
+
+.show-body-left-header-calendar{
+    width: 60%;
+    padding: 10px;
+    border: 1px solid #000;
+}
+
+.show-body-left-header-eye,
+.show-body-left-header-folder
+{
+    width: 20%;
+    padding: 10px;
+    border: 1px solid #000;
+}
+
+.show-body-left-header-folder{
+    box-shadow: 3px 3px #000;
+    transition: all 0.5s ease;
+}
+
+.show-body-left-header-folder:hover{
+    box-shadow: none;
+}
+
+.show-body-left-header-folder a{
+    text-decoration: none;
+    color: #000;
+}
+
+.show-body-left-main{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px;
+    padding-top: 0px;
+    gap: 20px;
+
+}
+
+.show-body-left-main-title{
+    font-size: 45px;
+}
+
+.show-body-left-main-image{
+    width: 100%;
+}
+
+.show-body-left-main-about{
+    font-size: 20px;
+    text-align: justify;    
+}
+
+.show-body-left-footer{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 20px;
+    padding-bottom: 30px;
+}
+
+.show-body-left-footer-newspaper{
+    display: flex;
+    align-items: center;
+    padding-bottom: 30px;
+    padding-left: 0px;
+    font-size: 20px;
+    gap: 20px;
+}
+
+.show-body-left-footer-newspaper h3{
+    padding: 10px;
+    padding-left: 0px;
+    border-bottom: 1px solid #000;
+}
+
+.show-body-left-footer-cards{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 20px;
+}
+
+.show-body-left-footer-card{
+    display: flex;
+    width: 48%;
+    gap: 20px;
+}
+
+.show-body-left-footer-card_image{
+    width: 100px;
+    height: 100px;
+}
+
+.show-body-left-footer-card_text-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.show-body-left-footer-card_title{
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #000;
+
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* Faqat 3 qator ko‘rsatiladi */
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    transition: all 0.5s ease;
+}
+
+
+.show-body-left-footer-card_title:hover{
+    color: #00d1f9;
+}
+
+.show-body-left-footer-card_post-date {
+    color: gray;
+    font-size: 14px;
+}
+
+.show-body-right{
+    width: 28%;
+}
+
+.show-body-right-newspaper{
+    display: flex;
+    align-items: center;
+    padding: 50px;
+    padding-bottom: 30px;
+    padding-left: 0px;
+    font-size: 20px;
+    gap: 20px;
+}
+
+.show-body-right-newspaper h3{
+    padding: 10px;
+    padding-left: 0px;
+    border-bottom: 1px solid #000;
+}
+
+.show-body-right-cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
 }

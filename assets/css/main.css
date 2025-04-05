@@ -32,6 +32,12 @@ header{
     font-weight: bold;
     color: #fff;
 }
+
+.logo a{
+    text-decoration: none;
+    color: #fff;
+}
+
 nav ul {
     list-style: none;
     display: flex;
@@ -49,6 +55,10 @@ nav ul li a:hover{
     color: #00d1f9
 }
 
+section{
+    padding-top: 60px;
+}
+
 .header-body,
 .main-body
 {
@@ -62,7 +72,7 @@ nav ul li a:hover{
     background-color: #fff;
     color: #000;
     justify-content: center;
-    margin: 15px;
+    margin: 20px;
 }
 
 .header-body-contents{
@@ -75,7 +85,7 @@ nav ul li a:hover{
     padding: 30px;
     background-color: #fff;
     gap: 40px;
-    margin: 15px;
+    margin: 20px;
     box-shadow: 0rem 0rem 1rem rgba(0, 0, 0, 0.2);
 }
 

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <title>Dinamik Forma</title>
+  <style>
+    body { font-family: Arial; padding: 20px; }
+    .form-group { margin-bottom: 15px; }
+    button { margin-right: 10px; }
+  </style>
+</head>
+<body>
+
+  <h2>Yangi Maqola Qo'shish</h2>
+  <form id="dynamicForm">
+
+    <!-- Asosiy Sarlavha -->
+    <div class="form-group">
+      <label>Asosiy Sarlavha *</label><br>
+      <input type="text" name="main_title" required>
+    </div>
+
+    <!-- Dinamik joy -->
+    <div id="dynamicFields"></div>
+
+    <!-- Tugmalar -->
+    <button type="button" onclick="addImage()">1 - Rasm qo'shish</button>
+    <button type="button" onclick="addText()">2 - Ma'lumot qo'shish</button>
+    <button type="button" onclick="addSubtitle()">3 - Kichik Sarlavha qo'shish</button>
+
+    <br><br>
+    <button type="submit">Yuborish</button>
+  </form>
+
+  <script>
+    function addImage() {
+      const div = document.createElement('div');
+      div.className = 'form-group';
+      div.innerHTML = '<label>Rasm:</label><br><input type="file" name="images[]">';
+      document.getElementById('dynamicFields').appendChild(div);
+    }
+
+    function addText() {
+      const div = document.createElement('div');
+      div.className = 'form-group';
+      div.innerHTML = '<label>Ma\'lumot:</label><br><textarea name="texts[]" rows="3" cols="40"></textarea>';
+      document.getElementById('dynamicFields').appendChild(div);
+    }
+
+    function addSubtitle() {
+      const div = document.createElement('div');
+      div.className = 'form-group';
+      div.innerHTML = '<label>Kichik Sarlavha:</label><br><input type="text" name="subtitles[]">';
+      document.getElementById('dynamicFields').appendChild(div);
+    }
+
+    // Submitni oldini olamiz (misol uchun)
+    document.getElementById("dynamicForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+      alert("Forma yuborildi!");
+    });
+  </script>
+
+</body>
+</html>
