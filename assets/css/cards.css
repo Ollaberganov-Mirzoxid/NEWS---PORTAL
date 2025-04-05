@@ -182,6 +182,10 @@
     backface-visibility: hidden;
 }
 
+.news-card__read-more:hover{
+    color: #00d1f9;
+}
+
 .news-card__read-more:hover i {
     left: 0.5rem;
     color: #00d1f9;

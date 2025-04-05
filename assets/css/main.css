@@ -29,6 +29,7 @@ header{
 }
 
 .logo {
+    width: 25%;
     font-weight: bold;
     color: #fff;
 }
